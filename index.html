@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Болезни популярных плодовых культур</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <h1>Болезни популярных плодовых культур</h1>
+    <p>Информационный ресурс для садоводов: симптомы, лечение, профилактика</p>
+    <input type="text" id="search" placeholder="Поиск болезни: монилиоз, парша, коккомикоз...">
+  </div>
+</header>
+
+<nav class="filters">
+  <button class="filter-btn active" data-filter="all">Все болезни</button>
+  <button class="filter-btn" data-filter="семечковые">Семечковые</button>
+  <button class="filter-btn" data-filter="косточковые">Косточковые</button>
+  <button class="filter-btn" data-filter="ягодные">Ягодные</button>
+  <button class="filter-btn" data-filter="вирусные">Вирусные и карантинные</button>
+</nav>
+
+<main>
+
+<section class="cultures">
+  <h2>Культуры на сайте</h2>
+  <div class="culture-grid">
+    <div class="culture-card"><img src="images/yablonya-karta.jpg" alt="Яблоня"><span>Яблоня</span></div>
+    <div class="culture-card"><img src="images/grusha-karta.jpg" alt="Груша"><span>Груша</span></div>
+    <div class="culture-card"><img src="images/vishnya-karta.jpg" alt="Вишня"><span>Вишня</span></div>
+    <div class="culture-card"><img src="images/sliva-karta.jpg" alt="Слива"><span>Слива</span></div>
+    <div class="culture-card"><img src="images/persik-karta.jpg" alt="Персик"><span>Персик</span></div>
+    <div class="culture-card"><img src="images/malina-karta.jpg" alt="Малина"><span>Малина</span></div>
+  </div>
+</section>
+
+<section class="diseases">
+  <h2>Болезни</h2>
+  <div class="grid" id="cards">
+
+    <article class="card" data-cat="косточковые" data-name="монилиоз">
+      <img src="images/monilioz-vishnya.jpg" alt="Монилиоз на вишне">
+      <h3>Монилиоз (монилиальный ожог)</h3>
+      <p class="crops"><strong>Культуры:</strong> вишня, черешня, слива, абрикос, персик, яблоня, груша</p>
+      <div class="symptoms">
+        <strong>Симптомы:</strong>
+        <ul>
+          <li>Цветки буреют и засыхают, но не опадают</li>
+          <li>Побеги усыхают, как после пожара</li>
+          <li>На плодах — бурые пятна, мумификация</li>
+        </ul>
+      </div>
+      <div class="treatment">
+        <strong>Лечение:</strong>
+        <p>Вырезать поражённые ветки с захватом 5–10 см здоровой ткани, сжигать. 4% бордоская жидкость до распускания почек, 1% — после цветения (двукратно, интервал 10–12 дней).</p>
+      </div>
+      <p class="source">Источник: Россельхозцентр, Краснодарский край, Информационный листок № 18 от 07.05.2026</p>
+    </article>
+
+    <article class="card" data-cat="косточковые" data-name="клястероспориоз">
+      <img src="images/klyasterosporioz-list.jpg" alt="Клястероспориоз на листе">
+      <h3>Клястероспориоз (дырчатая пятнистость)</h3>
+      <p class="crops"><strong>Культуры:</strong> абрикос, вишня, персик, черешня, слива</p>
+      <div class="symptoms">
+        <strong>Симптомы:</strong>
+        <ul>
+          <li>Пятна 1–5 мм с красно-бурой каймой</li>
+          <li>Центр пятна выпадает — отверстия «как от дроби»</li>
+          <li>На побегах — камедетечение</li>
+        </ul>
+      </div>
+      <div class="treatment">
+        <strong>Лечение:</strong>
+        <p>Осенняя перекопка, обрезка и сжигание поражённых ветвей. Опрыскивание медьсодержащими препаратами.</p>
+      </div>
+      <p class="source">Источник: Supersadovnik.ru, Д. Белов, канд. биол. наук, 09.07.2025</p>
+    </article>
+
+    <article class="card" data-cat="косточковые" data-name="коккомикоз">
+      <img src="images/kokkomikoz-list.jpg" alt="Коккомикоз на листе вишни">
+      <h3>Коккомикоз</h3>
+      <p class="crops"><strong>Культуры:</strong> вишня, черешня</p>
+      <div class="symptoms">
+        <strong>Симптомы:</strong>
+        <ul>
+          <li>Мелкие красно-коричневые пятна на листьях</li>
+          <li>Белый налёт на нижней стороне листа</li>
+          <li>Преждевременный листопад, снижение зимостойкости</li>
+        </ul>
+      </div>
+      <div class="treatment">
+        <strong>Лечение:</strong>
+        <p>Обработка после цветения: Хорус, Скор. Сбор и сжигание опавших листьев.</p>
+      </div>
+      <p class="source">Источник: Россельхозцентр, Краснодарский край, 2026</p>
+    </article>
+
+    <article class="card" data-cat="косточковые" data-name="курчавость">
+      <img src="images/kurchavost-persik.jpg" alt="Курчавость листьев персика">
+      <h3>Курчавость листьев персика</h3>
+      <p class="crops"><strong>Культуры:</strong> персик, нектарин, абрикос, миндаль</p>
+      <div class="symptoms">
+        <strong>Симптомы:</strong>
+        <ul>
+          <li>Листья утолщаются, становятся гофрированными</li>
+          <li>Окраска — жёлтая или красно-розовая</li>
+          <li>На нижней стороне — белый восковой налёт</li>
+        </ul>
+      </div>
+      <div class="treatment">
+        <strong>Лечение:</strong>
+        <p>Только до набухания почек: 3% бордоская жидкость или 3% медный купорос. Если листья уже скрутились — поздно.</p>
+      </div>
+      <p class="source">Источник: Россельхозцентр, Республика Крым</p>
+    </article>
+
+    <article class="card" data-cat="семечковые" data-name="парша">
+      <img src="images/parkha-yablonya.jpg" alt="Парша на яблоне">
+      <h3>Парша яблони и груши</h3>
+      <p class="crops"><strong>Культуры:</strong> яблоня, груша</p>
+      <div class="symptoms">
+        <strong>Симптомы:</strong>
+        <ul>
+          <li>Оливково-бурые пятна на листьях</li>
+          <li>Тёмные твёрдые пятна на плодах, растрескивание</li>
+          <li>Побеги покрываются пузырями, кора шелушится</li>
+        </ul>
+      </div>
+      <div class="treatment">
+        <strong>Лечение:</strong>
+        <p>Скор, Хорус, бордоская смесь. Сбор и сжигание опавших листьев осенью.</p>
+      </div>
+      <p class="source">Источник: Россельхозцентр, Белгородская область</p>
+    </article>
+
+    <article class="card" data-cat="семечковые" data-name="монилиоз яблони">
+      <img src="images/monilioz-yablonya.jpg" alt="Монилиоз на яблоне">
+      <h3>Плодовая гниль (монилиоз) яблони</h3>
+      <p class="crops"><strong>Культуры:</strong> яблоня, груша</p>
+      <div class="symptoms">
+        <strong>Симптомы:</strong>
+        <ul>
+          <li>Бурое пятно на плоде быстро разрастается</li>
+          <li>Мякоть буреет, плод сморщивается</li>
+          <li>Мумифицированные плоды висят до весны</li>
+        </ul>
+      </div>
+      <div class="treatment">
+        <strong>Лечение:</strong>
+        <p>Удалять мумифицированные плоды с дерева и под деревом. Обработка Хорусом, Скором.</p>
+      </div>
+      <p class="source">Источник: Россельхозцентр, Белгородская область, 13.05.2026</p>
+    </article>
+
+    <article class="card" data-cat="вирусные" data-name="фитоплазма груши">
+      <img src="images/fitoplazma-grushi.jpg" alt="Фитоплазма истощения груши">
+      <h3>Фитоплазма истощения груши</h3>
+      <p class="crops"><strong>Культуры:</strong> груша, айва</p>
+      <div class="symptoms">
+        <strong>Симптомы:</strong>
+        <ul>
+          <li>Цветки засыхают, но не опадают</li>
+          <li>Листья желтеют, затем краснеют</li>
+          <li>Потемневшая флоэма ниже места прививки</li>
+        </ul>
+      </div>
+      <div class="treatment">
+        <strong>Лечение:</strong>
+        <p>Прямых мер нет. Только здоровый посадочный материал и борьба с грушевой медяницей.</p>
+      </div>
+      <p class="source">Источник: Россельхознадзор, 2025</p>
+    </article>
+
+    <article class="card" data-cat="вирусные" data-name="фитоплазма яблони">
+      <img src="images/fitoplazma-yabloni.jpg" alt="Фитоплазма пролиферации яблони">
+      <h3>Фитоплазма пролиферации яблони</h3>
+      <p class="crops"><strong>Культуры:</strong> яблоня</p>
+      <div class="symptoms">
+        <strong>Симптомы:</strong>
+        <ul>
+          <li>Массовое пробуждение спящих почек</li>
+          <li>Тонкие прямостоячие побеги с короткими междоузлиями</li>
+          <li>Плоды уменьшаются до 50%, потери урожая до 60%</li>
+        </ul>
+      </div>
+      <div class="treatment">
+        <strong>Лечение:</strong>
+        <p>Оздоровление невозможно. Деревья с симптомами выкорчёвывают и сжигают.</p>
+      </div>
+      <p class="source">Источник: Россельхознадзор</p>
+    </article>
+
+    <article class="card" data-cat="косточковые" data-name="бактериальная пятнистость">
+      <img src="images/bakterialnaya-pyatnistost.jpg" alt="Бактериальная пятнистость">
+      <h3>Бактериальная пятнистость</h3>
+      <p class="crops"><strong>Культуры:</strong> персик, слива, абрикос</p>
+      <div class="symptoms">
+        <strong>Симптомы:</strong>
+        <ul>
+          <li>Пятна темнеют до фиолетового или чёрного</li>
+          <li>Вокруг пятна — жёлтая кайма</li>
+          <li>На плодах — коричневые пятна и трещины</li>
+        </ul>
+      </div>
+      <div class="treatment">
+        <strong>Лечение:</strong>
+        <p>См. «Реестр пестицидов и агрохимикатов», разрешённых к применению.</p>
+      </div>
+      <p class="source">Источник: Россельхознадзор</p>
+    </article>
+
+    <article class="card" data-cat="вирусные" data-name="шарка сливы">
+      <img src="images/sharka-slivy.jpg" alt="Шарка сливы">
+      <h3>Шарка сливы (оспа)</h3>
+      <p class="crops"><strong>Культуры:</strong> слива, персик, абрикос, алыча</p>
+      <div class="symptoms">
+        <strong>Симптомы:</strong>
+        <ul>
+          <li>Тёмно-зелёные пятна в виде полос и колец на плодах</li>
+          <li>Мякоть уплотняется, краснеет</li>
+          <li>Плоды созревают на 20–30 дней раньше, осыпаются</li>
+        </ul>
+      </div>
+      <div class="treatment">
+        <strong>Лечение:</strong>
+        <p>Вирусное заболевание, лечению не подлежит. Деревья выкорчёвывают и сжигают.</p>
+      </div>
+      <p class="source">Источник: Россельхознадзор</p>
+    </article>
+
+    <article class="card" data-cat="ягодные" data-name="мучнистая роса">
+      <img src="images/rosa-muchnistaya.jpg" alt="Мучнистая роса">
+      <h3>Мучнистая роса</h3>
+      <p class="crops"><strong>Культуры:</strong> яблоня, груша, малина, ежевика</p>
+      <div class="symptoms">
+        <strong>Симптомы:</strong>
+        <ul>
+          <li>Белый мучнистый налёт на листьях и побегах</li>
+          <li>Листья скручиваются, засыхают</li>
+          <li>Побеги отстают в росте</li>
+        </ul>
+      </div>
+      <div class="treatment">
+        <strong>Лечение:</strong>
+        <p>Топаз, Скор. Удаление поражённых побегов.</p>
+      </div>
+      <p class="source">Источник: Россельхозцентр</p>
+    </article>
+
+    <article class="card" data-cat="ягодные" data-name="антракноз малины">
+      <img src="images/antraknoz-maliny.jpg" alt="Антракноз малины">
+      <h3>Антракноз малины</h3>
+      <p class="crops"><strong>Культуры:</strong> малина, ежевика</p>
+      <div class="symptoms">
+        <strong>Симптомы:</strong>
+        <ul>
+          <li>Серо-белые пятна с пурпурной каймой на листьях</li>
+          <li>Пятна сливаются, листья засыхают</li>
+          <li>На побегах — язвы и отмирание тканей</li>
+        </ul>
+      </div>
+      <div class="treatment">
+        <strong>Лечение:</strong>
+        <p>Бордоская смесь, удаление и сжигание поражённых побегов.</p>
+      </div>
+      <p class="source">Источник: Россельхозцентр</p>
+    </article>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>Информационный ресурс «Болезни популярных плодовых культур»</p>
+  <p>Источники: ФГБУ «Россельхозцентр», Россельхознадзор, Supersadovnik.ru</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
